@@ -22,6 +22,6 @@ router.get("/audifonos", mainController.audifonos);
 router.get("/quienessomos", mainController.quienessomos);
 /* router.get("/admin", productsController.index); */
 
-
+router.get ("/pruebasession",mainController.session)
 // Acá exportamos el resultado
 module.exports = router;

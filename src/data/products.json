@@ -128,15 +128,5 @@
     "description": "sdfsdfgsdf",
     "brand": "Honda",
     "image": "products-1655057572242.jfif"
-  },
-  {
-    "id": 18,
-    "name": "bicicleta",
-    "price": "46",
-    "discount": "20",
-    "category": "monitores",
-    "description": "A ver que pasa",
-    "brand": "Xiaomi",
-    "image": "products-1655081613116.jfif"
   }
 ]

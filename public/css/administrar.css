@@ -1,21 +1,57 @@
 
-.col-12-titulo{
+.Administrador-Productos{
     background: #ebebeb;
     display: flex;
     justify-content: center;
     color: red solid 1000px;
+    /* text-decoration: underline; */
+}
+
+.Administrador-Productos:hover{
+    color: red;
+    transition: 1000ms;
 }
 
 .col-12-Agregar{
     display: flex;
     justify-content: center;
     background-color: #ebebeb;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.col-12-Agregar:hover{
+    color:red ;
+    transition: 1000ms;
+    
 }
 
 
-.col-12-table{
+.contenedor-table{
     display: flex;
     justify-content: center;
     background-color: #ebebeb;
     /* margin: 10px; */
 }
+
+.table{
+    width: 40%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contenedor-filaNombres{
+    text-decoration: underline;
+}
+
+.fa-brands{
+    margin-left: 10PX;
+    margin-top: 1PX;
+}
+
+@media (min-width :300px) {
+    .fa-brands{
+       display: none; 
+    }
+}
+

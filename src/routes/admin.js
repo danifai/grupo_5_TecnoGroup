@@ -27,6 +27,7 @@ var storage = multer.diskStorage({
   router.get('/administrar/edit/:id', controllersAdmin.edit);
   router.put('/administrar/edit/:id',upload.single('image') , controllersAdmin.update);
   router.get('/administrar/delete/:id', controllersAdmin.destroy);
+  
 
 
 module.exports = router;

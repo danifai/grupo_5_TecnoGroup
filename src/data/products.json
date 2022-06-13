@@ -1,14 +1,5 @@
 [
   {
-    "name": "auriculares",
-    "description": "te permiten sumergirte al instante en tu universo sonoro gracias a que se conectan con tu dispositivo en cuanto los sacas del estuche. Dual Connect te permite usar ambos auriculares o solo uno, como prefieras. El increíble sonido de tus artistas favoritos resulta aún más espectacular con JBL Pure Bass. Con hasta 32 horas de batería y un ajuste muy cómodo, puedes disfrutar de tu música día y noche. Elige entre los preciosos colores disponibles para disfrutar de unos auriculares True Wireless que se adaptan a la perfección a tu estilo.",
-    "price": "3000",
-    "discount": "30",
-    "oldImage": "ea2.jpg",
-    "id": "3",
-    "image": "ea2.jpg"
-  },
-  {
     "id": 4,
     "name": "auriculares",
     "price": 100,
@@ -106,62 +97,5 @@
     "category": "ofertas",
     "description": "te permiten sumergirte al instante en tu universo sonoro gracias a que se conectan con tu dispositivo en cuanto los sacas del estuche. Dual Connect te permite usar ambos auriculares o solo uno, como prefieras. El increíble sonido de tus artistas favoritos resulta aún más espectacular con JBL Pure Bass. Con hasta 32 horas de batería y un ajuste muy cómodo, puedes disfrutar de tu música día y noche. Elige entre los preciosos colores disponibles para disfrutar de unos auriculares True Wireless que se adaptan a la perfección a tu estilo.",
     "image": "ea2.jpg"
-  },
-  {
-    "id": 16,
-    "name": "auriculares",
-    "price": 100,
-    "discount": 50,
-    "category": "ofertas",
-    "description": "te permiten sumergirte al instante en tu universo sonoro gracias a que se conectan con tu dispositivo en cuanto los sacas del estuche. Dual Connect te permite usar ambos auriculares o solo uno, como prefieras. El increíble sonido de tus artistas favoritos resulta aún más espectacular con JBL Pure Bass. Con hasta 32 horas de batería y un ajuste muy cómodo, puedes disfrutar de tu música día y noche. Elige entre los preciosos colores disponibles para disfrutar de unos auriculares True Wireless que se adaptan a la perfección a tu estilo.",
-    "image": "ea2.jpg"
-  },
-  {
-    "id": 17,
-    "description": "que pasa aca",
-    "brand": "auxilio",
-    "price": null,
-    "discount": null,
-    "image": "default-image.png"
-  },
-  {
-    "id": 18,
-    "name": "un producto",
-    "price": 6000,
-    "discount": 10,
-    "category": "mouses",
-    "description": "a ver",
-    "brand": "pirulo",
-    "image": "default-image.png"
-  },
-  {
-    "id": 19,
-    "name": "otra vez",
-    "price": 60000,
-    "discount": 10,
-    "category": "PCs",
-    "description": "otra",
-    "brand": "que se yo",
-    "image": "image-1654136631714.jpg"
-  },
-  {
-    "id": 20,
-    "name": "otro",
-    "price": 4000,
-    "discount": 10,
-    "category": "tablets",
-    "description": "a ver",
-    "brand": "otra",
-    "image": "image-1654136695170.png"
-  },
-  {
-    "id": 21,
-    "name": "uno mas",
-    "price": 5000,
-    "discount": 10,
-    "category": "audifonos",
-    "description": "a ver",
-    "brand": "otra vez",
-    "image": "image-1654136855045.jpg"
   }
 ]

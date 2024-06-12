@@ -10,16 +10,32 @@ async function userLoggedMiddleware(req, res, next) {
       where: {
         email: emailInCookie
       },
-      include: 'role'
+      include: [{
+        model: db.Role,
+        as: 'roles'
+      }]
     })
-    req.session.userLogged = userFromCookie;
+
+    if (userFromCookie) {
+      req.session.userLogged = userFromCookie;
+    }
   }
 
-  if (req.session.userLogged) {
-    res.locals.isLogged = true;
-    res.locals.userLogged = req.session.userLogged;
-    res.locals.isAdmin = res.locals.userLogged.role.role_name == 'admin';
+  if (req.session && req.session.userLogged) {
+      res.locals.isLogged = true;
+      res.locals.userLogged = req.session.userLogged;
+      if (res.locals.userLogged.roles) {
+          res.locals.isAdmin = res.locals.userLogged.roles.role_name === 'admin';
+      } else {
+          res.locals.isAdmin = false;
+      }
+  } else {
+      res.locals.isAdmin = false;
   }
+
+  console.log('userLogged:', res.locals.userLogged)
+  console.log('isLogged:', res.locals.isLogged); // Debugging
+  console.log('isAdmin:', res.locals.isAdmin); // Debugging
 
   next();
 }

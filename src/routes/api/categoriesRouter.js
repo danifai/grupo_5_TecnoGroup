@@ -5,19 +5,19 @@ const categoriesAPIController = require('../../controllers/api/categoriesAPICont
 //Rutas
 //Listado de todos los generos
 router.get('/', (req, res, next) => {
-    console.log('Accediendo a /api/categories');
+    console.log('Accediendo a /api/categories');  // debugging log
     next();
 }, categoriesAPIController.list);
 
 //Detalle del genero
 router.get('/:id', (req, res, next) => {
-    console.log(`Accediendo a /api/categories/${req.params.id}`);
+    console.log(`Accediendo a /api/categories/${req.params.id}`);  // debugging log
     next();
 }, categoriesAPIController.detail);
 
 //Películas por genero
 router.get('/:id/products', (req, res, next) => {
-    console.log(`Accediendo a /api/categories/${req.params.id}/products`);
+    console.log(`Accediendo a /api/categories/${req.params.id}/products`); // debugging log
     next();
 }, categoriesAPIController.categoryProducts);
 

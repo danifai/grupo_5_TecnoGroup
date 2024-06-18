@@ -33,9 +33,9 @@ async function userLoggedMiddleware(req, res, next) {
       res.locals.isAdmin = false;
   }
 
-  console.log('userLogged:', res.locals.userLogged)
-  console.log('isLogged:', res.locals.isLogged); // Debugging
-  console.log('isAdmin:', res.locals.isAdmin); // Debugging
+  // console.log('userLogged:', res.locals.userLogged) // Debugging
+  // console.log('isLogged:', res.locals.isLogged); // Debugging
+  // console.log('isAdmin:', res.locals.isAdmin); // Debugging
 
   next();
 }

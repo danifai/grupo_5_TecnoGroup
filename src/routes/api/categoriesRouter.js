@@ -4,10 +4,21 @@ const categoriesAPIController = require('../../controllers/api/categoriesAPICont
 
 //Rutas
 //Listado de todos los generos
-router.get('/', categoriesAPIController.list);
+router.get('/', (req, res, next) => {
+    console.log('Accediendo a /api/categories');
+    next();
+}, categoriesAPIController.list);
+
 //Detalle del genero
-router.get('/:id', categoriesAPIController.detail);
+router.get('/:id', (req, res, next) => {
+    console.log(`Accediendo a /api/categories/${req.params.id}`);
+    next();
+}, categoriesAPIController.detail);
+
 //Películas por genero
-router.get('/:id/products', categoriesAPIController.categoryProducts);
+router.get('/:id/products', (req, res, next) => {
+    console.log(`Accediendo a /api/categories/${req.params.id}/products`);
+    next();
+}, categoriesAPIController.categoryProducts);
 
 module.exports = router;

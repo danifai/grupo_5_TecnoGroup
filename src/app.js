@@ -15,9 +15,12 @@ const userRoutes = require('./routes/userRoutes');
 const productAPIRouter = require("./routes/api/products")
 const apiCategoriesRouter = require('./routes/api/categoriesRouter')
 
+console.log('Iniciando aplicación') // Debugging log
+
 // ************ express() ************
 const app = express();
 
+app.set('trust proxy', true);
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 const usersAPIController = require('./controllers/api/usersAPIController');
 

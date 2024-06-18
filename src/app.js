@@ -4,6 +4,7 @@ const express = require('express');
 const path = require('path');
 const session = require('express-session');
 const cors = require('cors');
+const PORT = process.env.PORT || 3002;
 
 const methodOverride = require('method-override');
 const cookies = require('cookie-parser');
@@ -56,5 +57,5 @@ app.use('/api/categories', apiCategoriesRouter);
 app.use('/api/users', apiUsersRouter);
 app.use('/api/products/', productAPIRouter);
 
-app.listen(3002, () => { console.log('Servidor arriba en el puerto 3002 🤓👌'); })
+app.listen(PORT, () => { console.log(`Servidor arriba en el puerto ${PORT} 🤓👌`); })
 app.use((req, res, next) => { res.status(404).render('not-found') });
